@@ -1,4 +1,4 @@
-Palworld Server
+Palworld Server in Docker
 ----
 Default install directory is `/home/steam/Steam/`
 
