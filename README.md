@@ -29,7 +29,7 @@ cd pal
 export SETTING=$(pwd)/PalWorldSettings.ini
 export SAVE=$(pwd)/save
 
-docker run --name=pal \
+docker run --pull -d --name=pal \
  -e PORT=8211 \
  -e MAX_PLAYER=32 \
  -v $SETTING:/home/steam/Steam/steamapps/common/PalServer/Pal/Saved/Config/LinuxServer/PalWorldSettings.ini \
