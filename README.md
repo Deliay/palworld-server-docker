@@ -1,6 +1,6 @@
 Palworld Server in Docker
 ----
-Default install directory is `/home/steam/Steam/`
+In this container, steam installed at `/home/steam/Steam/`
 
 ## start server
 ```
@@ -16,15 +16,18 @@ docker run --name=pal \
 -v $your_config_path:/home/steam/Steam/steamapps/common/PalServer/Pal/Saved/Config/LinuxServer/PalWorldSettings.ini
 ```
 
-## mount world
+## mount save directory
 ```
--v $your_world_directory:/home/steam/Steam/steamapps/common/PalServer/Pal/Saved/SaveGames
+-v $your_save_directory:/home/steam/Steam/steamapps/common/PalServer/Pal/Saved/SaveGames
 ```
 
 ## example
 ```bash
-export SETTING=/home/example/pal/PalWorldSettings.ini
-export SAVE=/home/example/pal/save
+cd ~
+mkdir pal
+cd pal
+export SETTING=$(pwd)/PalWorldSettings.ini
+export SAVE=$(pwd)/save
 
 docker run --name=pal \
  -e PORT=8211 \
