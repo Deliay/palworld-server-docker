@@ -7,7 +7,7 @@ Default install directory is `/home/steam/Steam/`
 docker run --name=pal \
  -e PORT=8211 \
  -e MAX_PLAYER=32 \
- -p 8211:8211
+ -p 8211:8211/udp
  registry.cn-beijing.aliyuncs.com/zero-tools/pal-docker:latest
 ```
 
@@ -31,6 +31,6 @@ docker run --name=pal \
  -e MAX_PLAYER=32 \
  -v $SETTING:/home/steam/Steam/steamapps/common/PalServer/Pal/Saved/Config/LinuxServer/PalWorldSettings.ini \
  -v $SAVE:/home/steam/Steam/steamapps/common/PalServer/Pal/Saved/SaveGames \
- -p 8211:8211 \
+ -p 8211:8211/udp \
  registry.cn-beijing.aliyuncs.com/zero-tools/pal-docker:latest
 ```
