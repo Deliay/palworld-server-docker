@@ -21,6 +21,12 @@ docker run --name=pal \
 -v $your_save_directory:/home/steam/Steam/steamapps/common/PalServer/Pal/Saved/SaveGames
 ```
 
+## restrict memory and restart after oom
+```
+-m 16G
+--restart=always
+```
+
 ## example
 ```bash
 cd ~
@@ -35,5 +41,7 @@ docker run --pull -d --name=pal \
  -v $SETTING:/home/steam/Steam/steamapps/common/PalServer/Pal/Saved/Config/LinuxServer/PalWorldSettings.ini \
  -v $SAVE:/home/steam/Steam/steamapps/common/PalServer/Pal/Saved/SaveGames \
  -p 8211:8211/udp \
+ -m 16G \
+ --restart=always \
  registry.cn-beijing.aliyuncs.com/zero-tools/pal-docker:latest
 ```
