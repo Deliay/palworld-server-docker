@@ -32,16 +32,12 @@ docker run --name=pal \
 cd ~
 mkdir pal
 cd pal
-export GAME_SETTING=$(pwd)/PalWorldSettings.ini
-export WORLD_SETTING=$(pwd)/GameUserSettings.ini
-export SAVE=$(pwd)/save
+export SAVE=$(pwd)
 
-docker run --pull -d --name=pal \
+docker run --pull=always -d --name=pal \
  -e PORT=8211 \
  -e MAX_PLAYER=32 \
- -v $GAME_SETTING:/home/steam/Steam/steamapps/common/PalServer/Pal/Saved/Config/LinuxServer/PalWorldSettings.ini \
- -v $WORLD_SETTING:/home/steam/Steam/steamapps/common/PalServer/Pal/Saved/Config/LinuxServer/GameUserSettings.ini \
- -v $SAVE:/home/steam/Steam/steamapps/common/PalServer/Pal/Saved/SaveGames \
+ -v $SAVE:/home/steam/Steam/steamapps/common/PalServer/Pal/Saved \
  -p 8211:8211/udp \
  -m 16G \
  --restart=always \

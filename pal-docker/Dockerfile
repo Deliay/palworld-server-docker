@@ -3,4 +3,4 @@ ENV PORT=8211
 ENV MAX_PALYER=32
 
 COPY . .
-ENTRYPOINT [ "bash" "entrypoint.sh" ]
+ENTRYPOINT [ "sh", "entrypoint.sh" ]
