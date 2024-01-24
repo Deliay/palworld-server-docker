@@ -11,14 +11,9 @@ docker run --name=pal \
  registry.cn-beijing.aliyuncs.com/zero-tools/pal-docker:latest
 ```
 
-## mount config
-```
--v $your_config_path:/home/steam/Steam/steamapps/common/PalServer/Pal/Saved/Config/LinuxServer/PalWorldSettings.ini
-```
-
 ## mount save directory
 ```
--v $your_save_directory:/home/steam/Steam/steamapps/common/PalServer/Pal/Saved/SaveGames
+-v $your_save_directory:/home/steam/Steam/steamapps/common/PalServer/Pal/Saved
 ```
 
 ## restrict memory and restart after oom
