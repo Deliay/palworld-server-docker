@@ -33,9 +33,10 @@ https://github.com/VeroFess/PalWorld-Server-Unoffical-Fix
 
 | 版本 | TAG | 备注 | 
 | - | - | - |
-| 官方最新版+VeroFess patch Update2 | latest-vero-fess-patched |  |
-| 0.1.3版+VeroFess patch beta | 0.1.3-vero-fess-patched-beta |  |
-| 0.1.3版+VeroFess patch beta-4 | 0.1.3-vero-fess-patched-beta-4 | 据说效果显著 |
+| 0.1.3 + Update 3 | 0.1.3-vero-fess-patched-update-3 | | 
+| 0.1.3 + Update 2 | 0.1.3-vero-fess-patched-update-2 | |
+| 0.1.3 + Beta 3 | 0.1.3-vero-fess-patched-beta |  |
+| 0.1.3 + Beta 4 | 0.1.3-vero-fess-patched-beta-4 | |
 
 ### 如何使用tag
 将命令中的`registry.cn-beijing.aliyuncs.com/zero-tools/pal-docker:latest`最后的`latest`部分替换为对应tag即可，比如使用patched版本，则替换为`registry.cn-beijing.aliyuncs.com/zero-tools/pal-docker:latest-vero-fess-patched`
