@@ -27,7 +27,8 @@ docker run --pull=always -d --name=pal \
 | 0.1.2版 | 0.1.2 | |
 
 ### VeroFess patch版本
-⚠️ 不保证镜像安全，请到对应repo确认自己可以采用后再使用
+⚠️ 不保证镜像安全，请到对应repo确认自己可以采用后再使用:
+
 https://github.com/VeroFess/PalWorld-Server-Unoffical-Fix
 
 | 版本 | TAG | 备注 | 
