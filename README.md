@@ -23,3 +23,6 @@ docker run --pull=always -d --name=pal \
 | 官方最新版 | latest | |
 | 官方最新版+[VeroFess Patch](https://github.com/VeroFess/PalWorld-Server-Unoffical-Fix) | latest-vero-fess-patched | ⚠️不保证镜像安全，请到对应repo确认自己可以采用，可能会有内存/CPU占用优化 |
 | 0.1.2版 | 0.1.2 | |
+
+### 如何使用tag
+将命令中的`registry.cn-beijing.aliyuncs.com/zero-tools/pal-docker:latest`最后的`latest`部分替换为对应tag即可，比如使用patched版本，则替换为`registry.cn-beijing.aliyuncs.com/zero-tools/pal-docker:latest-vero-fess-patched`
