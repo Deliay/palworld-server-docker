@@ -17,7 +17,7 @@ docker run --pull=always -d --name=pal \
  --restart=always \
  registry.cn-beijing.aliyuncs.com/zero-tools/pal-docker:latest
 ```
-## 镜像列表
+## TAG列表
 | 版本 | TAG | 备注 | 
 | - | - | - |
 | 官方最新版 | latest | |
