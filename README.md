@@ -23,7 +23,7 @@ docker run --pull=always -d --name=pal \
 | 版本 | TAG | 备注 | 
 | - | - | - |
 | 官方最新版 | latest | 当前版本 0.1.3 |
-| 0.1.3版 | latest | |
+| 0.1.3版 | 0.1.3 | |
 | 0.1.2版 | 0.1.2 | |
 
 ### VeroFess patch版本
